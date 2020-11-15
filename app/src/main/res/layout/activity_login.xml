@@ -31,7 +31,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/registrarText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
@@ -44,7 +44,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btnentrar" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/textCorreo"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="16dp"
@@ -54,7 +54,7 @@
         android:ems="10"
         android:fontFamily="@font/gilroybold"
         android:hint="Correo"
-        android:inputType="textPassword"
+        android:inputType="textAutoComplete"
         android:paddingStart="10dp"
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -63,8 +63,9 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress2"
+        android:id="@+id/textPass"
         android:layout_width="0dp"
+
         android:layout_height="50dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
@@ -73,13 +74,13 @@
         android:ems="10"
         android:fontFamily="@font/gilroybold"
         android:hint="Contraseña"
-        android:inputType="textEmailAddress"
+        android:inputType="textPassword"
         android:paddingStart="10dp"
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+        app:layout_constraintTop_toBottomOf="@+id/textCorreo" />
 
     <Button
         android:id="@+id/btnentrar"
@@ -91,34 +92,34 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress2" />
+        app:layout_constraintTop_toBottomOf="@+id/textPass" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/icGoogle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="120dp"
         android:layout_marginTop="32dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/registrarText"
         app:srcCompat="@drawable/gl" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/icFb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/icGoogle"
+        app:layout_constraintTop_toTopOf="@+id/icGoogle"
         app:srcCompat="@drawable/fb" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/icTw"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
-        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintStart_toEndOf="@+id/icFb"
+        app:layout_constraintTop_toTopOf="@+id/icFb"
         app:srcCompat="@drawable/tw" />
 
     <com.google.android.gms.ads.AdView

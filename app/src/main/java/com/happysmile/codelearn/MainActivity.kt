@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import com.google.firebase.analytics.FirebaseAnalytics
 
 class MainActivity : AppCompatActivity() {
     private val SPLASH_TIME_OUT:Long = 5000
@@ -21,5 +22,11 @@ class MainActivity : AppCompatActivity() {
             finish()
         }, SPLASH_TIME_OUT)
 
+
+        //Evento de analitics
+        val analitics = FirebaseAnalytics.getInstance(this)
+        val bundle = Bundle()
+        bundle.putString("Message", "iNTEGRACION Exitosa")
+        analitics.logEvent("InitScreen",bundle)
     }
 }
